@@ -15,7 +15,7 @@ RUN set -xe \
         git git-flow \
         sudo shadow \
         wget curl \
-        vim nano \
+        nano \
         gnupg gpg \
         rsync \
         wrk \
