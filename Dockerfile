@@ -1,7 +1,7 @@
 FROM alpine:3.15.2
 
-COPY run.sh .
+COPY scripts/development.sh .
 
-RUN sh run.sh
+RUN ash development.sh
 
 ENTRYPOINT /bin/zsh
