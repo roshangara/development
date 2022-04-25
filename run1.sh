@@ -20,6 +20,10 @@ apk add --update --no-cache \
         rsync \
         wrk
 
+sed -i -e "s/bin\/ash/bin\/zsh/" /etc/passwd
+
+sed -i -e "s/bin\/bash/bin\/zsh/" /etc/passwd
+
 { find /usr/local/lib -type f -print0 | xargs -0r strip --strip-all -p 2>/dev/null || true; }
 
 rm -rf /tmp/* /var/tmp/* /usr/local/lib/php/doc/* /var/cache/apk/* /var/log/lastlog /var/log/faillog
