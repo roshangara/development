@@ -7,7 +7,7 @@ apk add --update --no-cache \
         bash zsh \
         tzdata coreutils file openssl openssh-client \
         lsof procps psmisc strace ncdu htop \
-        docker-cli docker-cli-compose \
+        docker-cli docker-cli-compose docker-cli-buildx \
         iputils net-tools bind-tools \
         less which grep sed tree jq \
         xz tar unzip zip zlib \
@@ -29,9 +29,7 @@ rm -rf /tmp/* /var/tmp/* /usr/local/lib/php/doc/* /var/cache/apk/* /var/log/last
 rm -rf *.tgz *.tar *.zip
 
 
-
 echo 'export GPG_TTY=$(tty)' >> ~/.zshrc
-echo 'alias docker-compose='docker compose'' >> ~/.zshrc
 
 sed -i -e "s/bin\/ash/bin\/zsh/" /etc/passwd
 
