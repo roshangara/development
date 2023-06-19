@@ -2,7 +2,7 @@
 
 wget -P /tmp/ https://raw.github.com/microsoft/vscode-dev-containers/main/containers/alpine/.devcontainer/library-scripts/common-alpine.sh
 
-ash /tmp/common-alpine.sh "true" "vscode" "1000" "1000"
+ash /tmp/common-alpine.sh
 
 apk add --update --no-cache \
         libgcc libstdc++ krb5-libs libintl libssl1.1 lttng-ust userspace-rcu \
